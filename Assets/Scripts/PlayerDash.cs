@@ -3,6 +3,9 @@ using System.Collections;
 
 public class PlayerDash : MonoBehaviour
 {
+    //https://www.youtube.com/watch?v=f473C43s8nE&t=1s
+    //https://www.youtube.com/watch?v=QRYGrCWumFw
+
     [Header("References")]
     public Transform orientation;
     private Rigidbody rb;
