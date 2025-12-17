@@ -1016,7 +1016,11 @@ MeshFilter:
   m_GameObject: {fileID: 922473698}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< Updated upstream:Assets/Scenes/SampleScene.unity
+<<<<<<< Updated upstream:Assets/Scenes/SampleScene.unity
 --- !u!1 &1069292127
+=======
+--- !u!1 &1099808213
+>>>>>>> Stashed changes:Assets/Scenes/GameScene.unity
 =======
 --- !u!1 &1099808213
 >>>>>>> Stashed changes:Assets/Scenes/GameScene.unity
@@ -1028,6 +1032,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< Updated upstream:Assets/Scenes/SampleScene.unity
+<<<<<<< Updated upstream:Assets/Scenes/SampleScene.unity
   - component: {fileID: 1069292128}
   - component: {fileID: 1069292131}
   - component: {fileID: 1069292130}
@@ -1035,6 +1040,8 @@ GameObject:
   m_Layer: 0
   m_Name: Cube (2)
 =======
+=======
+>>>>>>> Stashed changes:Assets/Scenes/GameScene.unity
   - component: {fileID: 1099808214}
   - component: {fileID: 1099808217}
   - component: {fileID: 1099808216}
@@ -1316,6 +1323,9 @@ Transform:
   - {fileID: 1726461847}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream:Assets/Scenes/SampleScene.unity
+>>>>>>> Stashed changes:Assets/Scenes/GameScene.unity
+=======
 >>>>>>> Stashed changes:Assets/Scenes/GameScene.unity
 --- !u!1 &1258936610
 GameObject:
@@ -1380,7 +1390,11 @@ Transform:
   - {fileID: 1650519834}
   - {fileID: 1112673040}
 <<<<<<< Updated upstream:Assets/Scenes/SampleScene.unity
+<<<<<<< Updated upstream:Assets/Scenes/SampleScene.unity
   - {fileID: 1925566066}
+=======
+  - {fileID: 1099808214}
+>>>>>>> Stashed changes:Assets/Scenes/GameScene.unity
 =======
   - {fileID: 1099808214}
 >>>>>>> Stashed changes:Assets/Scenes/GameScene.unity
