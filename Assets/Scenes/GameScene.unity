@@ -1986,6 +1986,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+  myColor: {r: 1, g: 0.99894536, b: 0, a: 1}
+  flashDuration: 0.1
+  mr: {fileID: 1726461850}
 --- !u!136 &1726461849
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2032,7 +2035,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 642e664b5d1b87b488f903e33424061b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2552,6 +2555,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+  myColor: {r: 1, g: 0.9245804, b: 0.013207495, a: 1}
+  flashDuration: 0.1
+  mr: {fileID: 1988622329}
 --- !u!136 &1988622328
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2598,7 +2604,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 642e664b5d1b87b488f903e33424061b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2779,6 +2785,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+  myColor: {r: 1, g: 0.9813614, b: 0, a: 1}
+  flashDuration: 0.1
+  mr: {fileID: 2021438599}
 --- !u!136 &2021438598
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2825,7 +2834,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 642e664b5d1b87b488f903e33424061b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
