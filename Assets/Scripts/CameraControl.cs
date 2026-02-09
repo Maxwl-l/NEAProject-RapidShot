@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
+    //https://www.youtube.com/watch?v=f473C43s8nE&t=1s
+
     public float sensX;
     public float sensY;
 
