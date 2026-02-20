@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Movement")]
     private float moveSpeed;
-    public float walkSpeed;
+    public float Speed;
 
     public Transform orientation;
 
@@ -51,6 +51,7 @@ public class PlayerMovement : MonoBehaviour
         rb.freezeRotation = true; //stops player from falling over
 
         readyToJump = true;
+
     }
 
     private void Update()
@@ -93,6 +94,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void MovePlayer()
     {
+        if (dashing) return; // stops extra force being applied during dash
+
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput; //Calculates player orientation of movement
 
         if (grounded)
@@ -103,7 +106,15 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force); //Changes player speed in air
         }
-        
+
+        //In air speed limiter
+        Vector3 SpeedCheck = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+        if (SpeedCheck.magnitude > moveSpeed)
+        {
+            Vector3 limitedSpeed = SpeedCheck.normalized * moveSpeed;
+            rb.linearVelocity = new Vector3(limitedSpeed.x, rb.linearVelocity.y, limitedSpeed.z);
+        }
+
     }
 
     private void Jump()
@@ -130,7 +141,7 @@ public class PlayerMovement : MonoBehaviour
         else if (grounded)
         {
             state = MovementState.walking;
-            moveSpeed = walkSpeed;
+            moveSpeed = Speed;
         }
 
         else

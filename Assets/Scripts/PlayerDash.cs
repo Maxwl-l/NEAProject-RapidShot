@@ -79,7 +79,7 @@ public class PlayerDash : MonoBehaviour
         yield return new WaitForSeconds(dashDuration);
 
         // Stop dash smoothly - removes added momentum by just assigning a new, lower value
-        rb.linearVelocity = new Vector3(rb.linearVelocity.x * 0.5f, rb.linearVelocity.y, rb.linearVelocity.z * 0.5f);
+        rb.linearVelocity = new Vector3(rb.linearVelocity.x * 0.2f, rb.linearVelocity.y, rb.linearVelocity.z * 0.2f);
 
         rb.useGravity = true;
         pm.dashing = false;
