@@ -7,12 +7,20 @@ public class PlayerShoot : MonoBehaviour
     //https://www.youtube.com/watch?v=dXgb6J46yjk
 
     public Transform FirePoint;
+    private AudioSource audioSource;
+    public AudioClip gunShot;
 
+    void Start()
+    {
+        audioSource = GetComponentInChildren<AudioSource>();
+    }
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
+            Debug.Log("Shooting!");
+            audioSource.PlayOneShot(gunShot); //plays gunshot sound when player shoots
             Shooting();
         }
         
