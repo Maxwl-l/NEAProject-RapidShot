@@ -1,13 +1,15 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Ene : MonoBehaviour
+public class EnemyAI : MonoBehaviour
 {
     public NavMeshAgent agent;
 
     public Transform player;
 
     public LayerMask whatIsGround, whatIsPlayer;
+
+    WaveSpawn Spawner;
 
     //Patroling
     public Vector3 walkPoint;
@@ -78,7 +80,7 @@ public class Ene : MonoBehaviour
         {
             GameObject spawnedProjectile = Instantiate(projectile, transform.position + transform.forward * 2f, Quaternion.identity);
             Rigidbody rb = spawnedProjectile.GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
+            rb.AddForce(transform.forward * 48f, ForceMode.Impulse);
             rb.AddForce(transform.up * 8f, ForceMode.Impulse);
 
             Physics.IgnoreCollision(spawnedProjectile.GetComponent<Collider>(), GetComponent<Collider>());
@@ -108,5 +110,10 @@ public class Ene : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, attackRange);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
+    }
+
+    public void SetSpawner(WaveSpawn _spawner)
+    {
+        Spawner = _spawner;
     }
 }

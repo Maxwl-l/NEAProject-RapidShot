@@ -33,11 +33,15 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     void Pause()
     {
+        AudioSource found = GameObject.Find("Player").GetComponentInChildren<AudioSource>();
+        Debug.Log("Found audio source: " + found.gameObject.name);
+        found.Stop();
         pauseMenuCanvas.SetActive(true); //activates the pause menu canvas
         Time.timeScale = 0f; //pauses the game by setting time scale to 0
         Cursor.lockState = CursorLockMode.None; //unlocks the cursor so the player can click on the pause menu buttons
         Cursor.visible = true; //makes the cursor visible
         Paused = true;
+        
 
     }
 

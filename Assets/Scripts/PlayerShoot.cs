@@ -17,13 +17,15 @@ public class PlayerShoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Time.timeScale == 0) return; // don't shoot if paused
+
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Debug.Log("Shooting!");
-            audioSource.PlayOneShot(gunShot); //plays gunshot sound when player shoots
+            Debug.Log("SHOOTING");
+            audioSource.PlayOneShot(gunShot);
             Shooting();
         }
-        
+
     }
 
     public void Shooting()

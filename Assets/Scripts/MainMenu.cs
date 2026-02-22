@@ -6,6 +6,7 @@ public class MainMenu : MonoBehaviour
     public void Start()
     {
         Cursor.lockState = CursorLockMode.None; //unlocks the cursor so the player can click on the pause menu buttons
+        Cursor.visible = true; //makes the cursor visible
     }
     public void Play()
     {
